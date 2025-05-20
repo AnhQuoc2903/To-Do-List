@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodoForm from "../src/component/TodoForm";
+import TodoList from "../src/component/TodoList";
+import DarkModeToggle from "./component/DarkModeToggle";
+import FilterButtons from "./features/filter/FilterButtons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen min-w-screen
+                    bg-white text-gray-900
+                    dark:bg-gray-900 dark:text-gray-100
+                    transition-colors duration-300 p-4
+                    flex flex-col items-center relative"
+    >
+      <div className="fixed top-4 right-4 z-50">
+        <DarkModeToggle />
+      </div>
+      <div className="w-full max-w-4xl mt-10">
+        <TodoForm />
+        <FilterButtons />
+        <TodoList />
+      </div>
     </div>
   );
 }
+
 
 export default App;
