@@ -11,10 +11,10 @@
    cd <tên-thư-mục-dự-án>
    ```
 
-2. Chạy ứng dụng:
-   npm start
-
-3. Cài đặt thư viện:
+2. Cài đặt thư viện:
    npm install
+
+3. Chạy ứng dụng:
+   npm start
 
 Dự án sử dụng React + TypeScript, Redux Toolkit để quản lý trạng thái, Tailwind CSS cho giao diện, localStorage để lưu dữ liệu. Hỗ trợ dark mode và kéo thả thay đổi thứ tự công việc với thư viện @dnd-kit. Không cần kết nối backend.
